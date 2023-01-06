@@ -1,27 +1,9 @@
-/* html {
-	background: url("../../images/trees.png"), url("../../images/mountains.png"), url("../../images/far-mountains.png");
-	background-size: 720px 1280px;
-} */
-
-body{
-	font-family:"arial",heletica,sans-serif;
-	font-size:12px;
-    background: url("../../images/trees.png"), url("../../images/mountains.png"), url("../../images/far-mountains.png");
-	background-repeat: repeat-x, repeat-x, repeat-x;
-	background-size: 720px 1280px;
+.p-item2 {
+	animation: 10s linear 0s normal none infinite animate;
 }
 
-.CloudsBG {
-	background-repeat: repeat-x, repeat-x, repeat-x;
-	background-size: 720px 1280px;
-}
-
-#far-clouds {
-	animation: animate 10s linear 0s normal none infinite;
-}
-
-#near-clouds {
-	animation: animate 10s linear 0s normal none infinite;
+.p-item3 {
+	animation: 20s linear 0s normal none infinite animate;
 }
  
 @-webkit-keyframes animate {
