@@ -18,13 +18,13 @@ body {
     background: url("images/gui/ui2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 25px;
+	padding: 150px;
     border-radius: 25px;
     height: fit-content;
   	transition: all .3s;
 	margin-top: 100px;
-	margin-left: 300px;
-	margin-right: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1 {
@@ -84,7 +84,7 @@ p {
 	background: url("images/background_clouds1.png") 100% repeat-x;
 	background-size: 960px 540px;
 	background-position: bottom;
-	-webkit-animation: 20s linear infinite animate_clouds;
+	-webkit-animation: 40s linear infinite animate_clouds;
 }
 
 .p-item4 {
@@ -109,13 +109,13 @@ p {
 }
  
 @-webkit-keyframes animate {
-	from {background-position: top left;}
-	to {background-position: top right;}
+	0% {background-position: top left;}
+	100% {background-position: top right;}
 }
 
 @-webkit-keyframes animate_clouds {
-	from {background-position: bottom left;}
-	to {background-position: bottom right;}
+	0% {background-position: bottom left;}
+	100% {background-position: bottom right;}
 }
 
 
