@@ -1,24 +1,13 @@
-let mode = "css"
-const editor = CodeMirror.fromTextArea(code, {
-  lineNumbers: true,
-  styleActiveLine: true,
-  matchBrackets: true,
-  scrollbarStyle: "overlay",
-  Tab: "indentMore",
-  defaultTab: function(cm) {
-    if (cm.somethingSelected()) cm.indentSelection("add");
-    else cm.replaceSelection("  ", "end");
-  },
-  mode
-})
-editor.setOption("theme", "highcontrast-dark")
-const x = document.querySelector(".code")
-const ro = new ResizeObserver(entries => {
-  editor.setSize(x.offsetWidth, x.offsetHeight)
-})
-ro.observe(document.querySelector(".code-container"))
+$('.pop-up').hide(0);
+$('.pop-up-container').hide(0);
 
-const changeMode = () => {
-  mode = mode === "css" ? "javascript" : "css"
-  editor.setOption("mode", mode)
-}
+$('.pop-up-button').click(function(){
+  $('.pop-up-container').show(0);
+  $('.pop-up').fadeIn(1000);
+  $('.pop-up-button').hide(0);
+});
+$('.pop-up span').click(function() {
+  $('.pop-up-container').hide(0);
+  $('.pop-up').hide(0);
+  $('.pop-up-button').show(0);
+});
